@@ -48,8 +48,6 @@ Detailed project description can be found [here](http://www.cs.cornell.edu/cours
 
 ### Results
 
-### For Part 1 and 2
-
 | tentacle albedo  | tentacle ncc  | tentacle normals  |
 | --------------------------------------------------------- | --------------------------------------------------------- |--------------------------------------------------------- |
 | <img src="results/tentacle_albedo.png" height="400px">  | <img src="results/tentacle_ncc.png" height="400px">  | <img src="results/tentacle_normals.png" height="400px">  | 
@@ -66,4 +64,40 @@ Detailed project description can be found [here](http://www.cs.cornell.edu/cours
 | --------------------------------------------------------- | 
 | <img src="results/Flowers_ncc.png" height="400px">  |
 
-### Part 3
+
+### 1. Tentacle Dataset: Comparison between "Both-mode" and "Depth-mode"
+- **Both-mode** (combining photometric stereo and plane sweep stereo) and depth-mode (plane sweep stereo only) struggle with accurately reconstructing the checkerboard pattern on the tentacle, causing a weird extrusion.
+- **Depth-mode** performs better at capturing smoother details, such as border lines and the clarity of the gun, indicating it handles depth discontinuities and fine details more effectively.
+- Main issue:
+  - Differing albedos of the black and white squares.
+  - Changing albedo of the tentacle confuses both photometric stereo and plane sweep stereo.
+  - Likely due to poor lighting and reflections, leading to inaccurate computations.
+
+| Both  | Depth  |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <img src="report/both-1.jpg">  | <img src="report/depth-1.jpg">  |
+| <img src="report/both-2.jpg">  | <img src="report/depth-2.jpg">  |
+| <img src="report/both-3.jpg">  | <img src="report/depth-3.jpg">  |
+| <img src="report/both-4.jpg">  | <img src="report/depth-4.jpg">  |
+
+### 2. Cat Dataset: Mode Set to Normals
+- The photometric stereo of the cat is successful without major mistakes.
+- Minor distortion is observed in the right eye from a specific angle, but no significant issues are seen from other angles.
+- The uniform color of the cat makes the computation of albedo and surface normals easier.
+
+| <img src="report/cat_normal-1.jpg" height=200px> | <img src="report/cat_normal-2.jpg">  |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <img src="report/cat_normal-3.jpg">  | <img src="report/cat_normal-4.jpg">  |
+| <img src="report/cat_normal-5.jpg">  |   |
+
+### 3. Flower Dataset: Mode Set to Depth
+- The dataset shows depth errors (mountain-like appearance) and only correctly identifies the flowers and sofa in the lower part of the image.
+- Likely causes:
+  - Interreflections and subsurface scattering inside the house.
+  - High color diversity, making it difficult for the depth and NCC algorithms to capture the correct depth.
+- The captured flowers are not accurate, as the borders include background pixels, affecting the results.
+
+| <img src="report/flower_depth-1.jpg" height=200px> | <img src="report/flower_depth-2.jpg">  |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <img src="report/flower_depth-3.jpg">  | <img src="report/flower_depth-4.jpg">  |
+| <img src="report/flower_depth-5.jpg">  |   |
