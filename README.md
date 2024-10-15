@@ -85,7 +85,7 @@ Detailed project description can be found [here](http://www.cs.cornell.edu/cours
 - Minor distortion is observed in the right eye from a specific angle, but no significant issues are seen from other angles.
 - The uniform color of the cat makes the computation of albedo and surface normals easier.
 
-| <img src="report/cat_normal-1.jpg" height=200px> | <img src="report/cat_normal-2.jpg">  |
+| <img src="report/cat_normal-1.jpg"> | <img src="report/cat_normal-2.jpg">  |
 | --------------------------------------------------------- | --------------------------------------------------------- |
 | <img src="report/cat_normal-3.jpg">  | <img src="report/cat_normal-4.jpg">  |
 | <img src="report/cat_normal-5.jpg">  |   |
@@ -97,7 +97,7 @@ Detailed project description can be found [here](http://www.cs.cornell.edu/cours
   - High color diversity, making it difficult for the depth and NCC algorithms to capture the correct depth.
 - The captured flowers are not accurate, as the borders include background pixels, affecting the results.
 
-| <img src="report/flower_depth-1.jpg" height=200px> | <img src="report/flower_depth-2.jpg">  |
+| <img src="report/flower_depth-1.jpg"> | <img src="report/flower_depth-2.jpg">  |
 | --------------------------------------------------------- | --------------------------------------------------------- |
 | <img src="report/flower_depth-3.jpg">  | <img src="report/flower_depth-4.jpg">  |
 | <img src="report/flower_depth-5.jpg">  |   |
