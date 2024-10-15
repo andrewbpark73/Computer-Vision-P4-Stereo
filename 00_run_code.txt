@@ -1,0 +1,7 @@
+python photometric_stereo.py tentacle
+
+python plane_sweep_stereo.py tentacle
+python plane_sweep_stereo.py Flowers
+
+
+nosetests -v
