@@ -64,6 +64,6 @@ Detailed project description can be found [here](http://www.cs.cornell.edu/cours
 
 | flowers ncc  |
 | --------------------------------------------------------- | 
-| <img src="results/flowers_ncc.png" height="400px">  |
+| <img src="results/Flowers_ncc.png" height="400px">  |
 
 ### Part 3
