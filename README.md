@@ -50,7 +50,7 @@ Detailed project description can be found [here](http://www.cs.cornell.edu/cours
 
 | tentacle albedo  | tentacle ncc  | tentacle normals  |
 | --------------------------------------------------------- | --------------------------------------------------------- |--------------------------------------------------------- |
-| <img src="results/tentacle_albedo.png" height="400px">  | <img src="results/tentacle_ncc.png" height="400px">  | <img src="results/tentacle_normals.png" height="400px">  | 
+| <img src="results/tentacle_albedo.png">  | <img src="results/tentacle_ncc_size.jpg">  | <img src="results/tentacle_normals.png">  | 
 
 <br />  
 
